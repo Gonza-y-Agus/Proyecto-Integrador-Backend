@@ -6,10 +6,7 @@ package com.portfolio.gs.Dto;
 
 import javax.validation.constraints.NotBlank;
 
-/**
- *
- * @author gonzagust
- */
+
 public class dtoPersona {
     
     @NotBlank
