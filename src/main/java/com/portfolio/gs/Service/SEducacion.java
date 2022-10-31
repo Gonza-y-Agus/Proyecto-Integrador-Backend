@@ -31,8 +31,8 @@ public class SEducacion {
     }
    
     
-    public void save(Educacion  expe){
-        rEducacion.save(expe);
+    public void save(Educacion  educacion){
+        rEducacion.save(educacion);
     }
     
     public void delete(int id){
