@@ -20,7 +20,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/personas")
-@CrossOrigin(origins = {"http://localhost:4200", "https://frotendgs1.web.app"})
+//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://frotendgs1.web.app")
 public class PersonaController {
 
     @Autowired
@@ -47,7 +48,7 @@ public class PersonaController {
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
         }
         if (personaService.existsByNombre(dtopersona.getNombre())) {
-            return new ResponseEntity(new Mensaje("Esa skill ya existe"), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity(new Mensaje("Esa persona ya existe"), HttpStatus.BAD_REQUEST);
         }
 
         Persona persona = new Persona(dtopersona.getNombre(), dtopersona.getApellido(), dtopersona.getDescripcion(), dtopersona.getImg());

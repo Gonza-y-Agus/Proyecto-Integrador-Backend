@@ -7,10 +7,6 @@ package com.portfolio.gs.Security.Dto;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- *
- * @author gonzagust
- */
 public class NuevoUsuario {
     private String nombre;
     private String nombreUsuario;

@@ -7,10 +7,6 @@ package com.portfolio.gs.Security.Dto;
 import java.util.Collection;
 import org.springframework.security.core.GrantedAuthority;
 
-/**
- *
- * @author gonzagust
- */
 public class JwtDto {
     private String Token;
     private String bearer = "Bearer";

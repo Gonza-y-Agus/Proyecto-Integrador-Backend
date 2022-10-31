@@ -4,10 +4,6 @@
  */
 package com.portfolio.gs.Security.Controller;
 
-/**
- *
- * @author gonzagust
- */
 public class Mensaje {
     private String mensaje;
     
